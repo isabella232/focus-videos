@@ -1,2 +1,2 @@
-# focus-videos
+# Focus Videos
 Focus video admin plugin.
