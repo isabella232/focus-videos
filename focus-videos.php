@@ -42,7 +42,7 @@ add_action('admin_init', 'siteorigin_focus_admin_init');
  * Add the video metabox.
  */
 function siteorigin_focus_add_metabox(){
-	add_meta_box('focus-video', __('Video', 'focus'), 'siteorigin_focus_video_metabox_render', 'post');
+	add_meta_box('focus-video', __('Video', 'focus'), 'siteorigin_focus_video_metabox_render', array( 'post', 'page' ) );
 }
 add_action('add_meta_boxes', 'siteorigin_focus_add_metabox');
 
@@ -86,7 +86,7 @@ function siteorigin_focus_video_field($type, $title){
 	$self = !empty($video['self']) ? get_post($video['self']) : null;
 
 	?>
-	<h4><?php printf(__('%s Video', 'focus'), $title) ?></h4>
+	<h3><?php printf(__('%s Video', 'focus'), $title) ?></h3>
 	<table class="form-table focus-video-table">
 		<tbody>
 		<tr>
