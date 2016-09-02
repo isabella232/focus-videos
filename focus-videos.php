@@ -39,20 +39,10 @@ add_action( 'add_meta_boxes', 'siteorigin_focus_add_metabox' );
 /**
  * Render the video metabox.
  */
-function siteorigin_focus_video_metabox_render() {
-	siteorigin_focus_video_field('public', __('Public', 'focus'));
-	if(function_exists('siteorigin_premium_call_function')) {
-		siteorigin_premium_call_function(
-			'siteorigin_focus_video_field',
-			array('premium', __('Premium', 'focus')),
-			array(
-				'before' => '<h4>'.__('Premium Video', 'focus').'</h4>',
-				'description' => __('Allows you to set a premium version of a video, and only show that video to paying members of your site using membership plugins like S2Member', 'focus')
-			)
-
-		);
-	}
-	do_action( 'focus_admin_after_video_metabox');
+function siteorigin_focus_video_metabox_render(){
+	siteorigin_focus_video_field( 'public', __( 'Public', 'focus' ) );
+	siteorigin_focus_video_field( 'premium', __( 'Premium', 'focus' ) );
+	do_action( 'focus_admin_after_video_metabox' );
 	wp_nonce_field( 'save', '_focusnonce' );
 }
 
