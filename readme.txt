@@ -28,5 +28,5 @@ Download the plugin ZIP file to your desktop. Install from Plugins > Add New > U
 = 1.1 - 6 September 2016 =
 * Code clean up.
 
-= 1.1 - 27 July 2016 =
+= 1.0 - 27 July 2016 =
 * Initial commit.
