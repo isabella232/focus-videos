@@ -3,7 +3,7 @@
 /*
 Plugin Name: Focus Video Plugin
 Description: A plugin for setting the video in Focus theme.
-Version: 1.0
+Version: 1.1
 Author: SiteOrigin
 Author URI: http://siteorigin.com
 License: GPL 3.0
